@@ -1,4 +1,4 @@
-# Don't Remove Credit Tg - @spidy_universe
+# Don't Remove Credit Tg - @fr_sammm11
 
 import os
 import time
