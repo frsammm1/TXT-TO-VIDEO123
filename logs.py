@@ -1,4 +1,4 @@
-# Don't Remove Credit Tg - @spidy_bots
+# Don't Remove Credit Tg - @fr_sammm11
 
 import logging
 from logging.handlers import RotatingFileHandler
