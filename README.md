@@ -52,6 +52,20 @@
 
 ---
 
+### 🏗️ Buildpacks (For Heroku/Non-Docker Deployments)
+If you are deploying on Heroku or a similar platform without using Docker, you will need to add the following buildpacks in your app settings:
+
+1.  **FFmpeg:**
+    `https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git`
+
+2.  **Aria2:**
+    `https://github.com/heroku/heroku-buildpack-aria2.git`
+
+3.  **Python:**
+    `heroku/python`
+
+---
+
 ### 🖥️ Run on VPS
 ```bash
 # Update system and install dependencies
