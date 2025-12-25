@@ -9,22 +9,26 @@
 ---
 
 ### **Features**
-- Convert your txt into video 
-- Working fine for pw, appx and classplus txt
-- Multiple modes & custom output options
-- Supports `/upload`, `/advance`, `/spidy`, and more
+- 🎥 **Text to Video:** Convert your txt links into video effortlessly.
+- 🏫 **Platform Support:** Working fine for PW, Appx, Classplus, VisionIAS, and more.
+- 📥 **Versatile Downloader:** Supports downloading Videos, PDFs, ZIPs, and HTML files.
+- 🖼️ **Image Support:** Enhanced image downloading (JPG, PNG, WEBP, etc.) with fallback mechanisms.
+- 🚀 **Multiple Modes:** Supports various command modes for flexibility.
+- 🎨 **Detailed UI/UX:** Improved user interface and detailed progress tracking.
+- ⚡ **Optimized:** Consolidated logic for faster and more reliable performance.
 
 ---
 
 ### **Bot Commands**
 ```
-/start       - Run bot
+/start       - Initialize the bot and see available commands
 /stop        - Stop ongoing task
-/upload      - For using in groups
-/advance     - Advance download
-/spidy       - All types txt
-/alpha       - Much better
-/bravo       - Another one
+/upload      - Upload TXT files to process
+/king        - Alternative command for upload
+/advance     - Advance download mode
+/spidy       - Special handler mode
+/alpha       - Alpha download mode
+/bravo       - Bravo download mode
 ```
 
 ---
@@ -41,7 +45,7 @@
 3. Click "New Web Service"
 4. Connect GitHub and select your repo
 5. Set build command: pip install -r requirements.txt
-6. Set start command: python3 bot.py
+6. Set start command: python3 main.py
 7. Add environment variables: API_ID, API_HASH, BOT_TOKEN, etc.
 8. Click "Deploy"
 ```
@@ -51,7 +55,7 @@
 ### 🖥️ Run on VPS
 ```bash
 # Update system and install dependencies
-sudo apt update && sudo apt install git python3-pip -y
+sudo apt update && sudo apt install git python3-pip ffmpeg -y
 
 # Clone the repo
 git clone https://github.com/popeye68/TXT-TO-VIDEO
@@ -60,13 +64,13 @@ cd TXT-TO-VIDEO
 # Install requirements
 pip3 install -r requirements.txt
 
-# Export environment variables or add them in config.py
+# Export environment variables or add them in vars.py (not recommended for public repos)
 export API_ID=123456
 export API_HASH=your_api_hash
 export BOT_TOKEN=your_bot_token
 
 # Run the bot
-python3 bot.py
+python3 main.py
 ```
 ---
 
@@ -83,11 +87,9 @@ This project is open source — you're welcome to change or enhance it after for
 
 ---
 
-### Connect with us
+### Credits
 <p align="center">
-  <a href="https://t.me/spidy_bots">
-    <img src="https://img.shields.io/badge/Telegram-%40spidy__bots-blue?style=for-the-badge&logo=telegram"/>
-  </a>
+  <b>Developed by @fr_sammm11</b>
 </p>
 
 <p align="center">

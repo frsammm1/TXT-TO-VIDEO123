@@ -243,15 +243,14 @@ async def download_video(url, cmd, name):
 async def download_visionias(url, cmd, name, k=None):
     global failed_counter
     # Retry logic for 'visionias' URLs
-    # Simplified logic to match original intent but ensuring execution happened
     if k and k.returncode != 0 and failed_counter <= 10:
         failed_counter += 1
         await asyncio.sleep(5)
         return await download_video(url, cmd, name)
-    else:
-        # Reset failed_counter if the download succeeds
-        failed_counter = 0
-        return await default_download(url, cmd, name)
+
+    # Reset failed_counter if the download succeeds or we gave up
+    failed_counter = 0
+    return await default_download(url, cmd, name)
 
 
 async def download_penpencilvod(url, cmd, name):
